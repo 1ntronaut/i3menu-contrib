@@ -31,7 +31,7 @@ bindsym $mod+Shift+p exec --no-startup-id i3fyra --layout redo ; exec --no-start
 ```
 
 #### [`i3menuunicode`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menuunicode)
-i3menu-compatible rewrite of [dmenuunicode](https://gitlab.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenuunicode) (previously: dmenumoji), uses [this file](https://github.com/1ntronaut/i3menu-contrib/blob/main/.local/share/emoji) ( obtained via (https://gitlab.com/LukeSmithxyz/voidrice/-/raw/master/.local/share/larbs/chars/emoji) ) for it's content.
+i3menu-compatible rewrite of [dmenuunicode](https://gitlab.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenuunicode) (previously: dmenumoji), uses [this file](https://github.com/1ntronaut/i3menu-contrib/blob/main/.local/share/emoji) ( obtained from this [source](https://gitlab.com/LukeSmithxyz/voidrice/-/raw/master/.local/share/larbs/chars/emoji) ) for it's content.
 
 requires:
 - i3menu
