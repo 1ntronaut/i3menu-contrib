@@ -7,10 +7,10 @@ Hosted mostly for example purposes.
 - REQUIRES this [fork of dmenu](https://github.com/budRich/dmenu)
 
 
-#### [`i3menu_run`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menu_run)
+### [`i3menu_run`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menu_run)
 dmenu_run drop-in replacement oneliner script
 
-#### [`i3menufyra`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menufyra)
+### [`i3menufyra`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menufyra)
 apply and/or redo i3fyra layouts via menu.
 
 requires:
@@ -30,7 +30,7 @@ bindsym $mod+p       exec --no-startup-id i3menufyra
 bindsym $mod+Shift+p exec --no-startup-id i3fyra --layout redo ; exec --no-startup-id notify-send "i3fyra" "i3fyra --layout redo" 
 ```
 
-#### [`i3menuunicode`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menuunicode)
+### [`i3menuunicode`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menuunicode)
 i3menu-compatible rewrite of [dmenuunicode](https://gitlab.com/LukeSmithxyz/voidrice/blob/master/.local/bin/dmenuunicode) (previously: dmenumoji), uses [this file](https://github.com/1ntronaut/i3menu-contrib/blob/main/.local/share/emoji) ( obtained from this [source](https://gitlab.com/LukeSmithxyz/voidrice/-/raw/master/.local/share/larbs/chars/emoji) ) for it's content.
 
 requires:
@@ -51,7 +51,7 @@ optional config:
 bindsym $mod+shift+quotedbl      exec --no-startup-id i3menuunicode
 ```
 
-#### [`i3menunf`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menunf)
+### [`i3menunf`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menunf)
 
 i3menu wrapper script showing all [Nerd Font](https://www.nerdfonts.com/) symbols, allowing for writing selected icon to clipboard. Uses [this file](https://raw.githubusercontent.com/1ntronaut/i3menu-contrib/refs/heads/main/nf-cheatsheet) for listing the Nerd Font icons. The nf-cheatsheet file was, in turn, generated using [this script](https://github.com/ryanoasis/nerd-fonts/blob/master/bin/scripts/lib/i_all.sh) from the [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) repo.
 
