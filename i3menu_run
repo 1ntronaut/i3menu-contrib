@@ -1,0 +1,2 @@
+#!/bin/sh
+dmenu_path | i3menu -p "run" --theme default "$@" | ${SHELL:-"/bin/sh"} &
