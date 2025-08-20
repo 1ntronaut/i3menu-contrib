@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# i3menufyra
+# i3menu wrapper to select and apply different 'i3fyra --layout' options
+# Get user selection via i3menu from choice
+
+chosen=$(printf "budlayout\\ngridlayout\\ndwmlayout" "$layouts" | i3menu -- -i -p "i3fyra -l")
+
+# Exit if none chosen.
+# Gridlayout is not EXACTLY 50% (AB=-960 AC=530 BD=530), because i3viswiz and i3flip will not understand perfect halves)
+
+case "$chosen" in
+	"budlayout") i3fyra --layout 'AB=-480 AC=246 BD=360' ; notify-send "i3fyra --layout $chosen" "AB=-480 AC=246 BD=360" ; exit ;;
+	"gridlayout") i3fyra --layout 'AB=-960 AC=530 BD=530' ; notify-send "i3fyra --layout $chosen" "AB=-960 AC=529 BD=529" ; exit ;;
+	"dwmlayout") i3fyra --layout 'AB=-786 AC=529 BD=529' ; notify-send "i3fyra --layout $chosen" "AB=-768 AC=529 BD=529" ; exit ;;
+esac
