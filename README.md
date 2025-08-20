@@ -10,7 +10,7 @@ Hosted mostly for example purposes.
 #### [`i3menu_run`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menu_run)
 dmenu_run drop-in replacement oneliner script
 
-#### [`i3menufyra'](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menufyra)
+#### [`i3menufyra`](https://github.com/1ntronaut/i3menu-contrib/blob/main/i3menufyra)
 apply and/or redo i3fyra layouts via menu.
 
 requires:
