@@ -1,0 +1,24 @@
+foreground = #eeeeee
+background = #1b1b1b
+foreground_selected = #f7f7f7
+background_selected = #4b7eb3
+font = Fixedsys Excelsior-13
+#font-size = 13
+# `font` setting above is internally parsed to dmenu through i3menu
+# The syntax for setting to be compatible is:
+# font = <fontname> -<fontsize>
+#   <fontname>: FullFont Name with Spaces
+#   use `fc-list | grep "<fontname>" | cut -d ":" -f2` to search the name of your installed fonts
+#   -<fontsize>: -20 on command line, the font size for dmenu can be set by using the `-fn Hack -18` option. Consequently, as it is basically a fancy wrapper for dmenu, this syntax turns out to be appropriately respected by both dmenu and i3menu, when running (your own) i3menu/dmenu scripts
+# Above syntax ensures compatibility if i3menu is called from any script, as well as it respects your environment variables if set.
+# USAGE 1: respects $I3MENU_DIR/ env variable if set; otherwise defaults to ~/.config/i3menu
+# !! MAKE SURE directory ~/.config/i3menu exists, before using i3menu
+#   `$ i3menu --theme ./relative/path/to/theme/file`
+# SYNTAX should look like this: 
+#   `$ i3menu --theme default`
+# This command will spawn i3menu, and will use the settings as defined in the file `~/.config/i3menu/default`
+# USECASE EXAMPLE 1: i3menu_run ; `dmenu_run` replacement, run commands in you $PATH using i3menu 
+# ```sh
+# #!/bin/sh
+# dmenu_path | i3menu -p "run" --theme default "$@" | ${SHELL:-"/bin/sh"} &
+# ````
