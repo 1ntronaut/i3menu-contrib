@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Adaptation of dmenuunicode (formerly dmenumoji) from LukeSmithxyz's LARBS, rewritten for i3menu compatibility and to list Nerd Font icons in stead of emojis.
+
+# Get user selection via dmenu from nf-cheetsheet file.
+chosen=$(cut -d ';' -f1 ~/.local/share/nf-cheatsheet | i3menu -b --theme nf -- -i -l 16 | sed "s/ .*//")
+
+# Exit if none chosen.
+[ -z "$chosen" ] && exit
+
+# If you run this command with an argument, it will automatically insert the
+# character. Otherwise, show a message that the emoji has been copied.
+## man xdotool(1)
+##`xdotool type [options] something to type`. Types as if you had typed it. Supports newlines and tabs (ASCII  newline  and  tab). Each keystroke is separated by a delay given by the --delay option.)
+if [ -n "$1" ]; then
+	xdotool type "$chosen"
+else
+	printf "%s" "$chosen" | xclip -selection clipboard
+  notify-send "i3menunf | xclip -selection clipboard" "' $chosen ' copied to X clipboard" &
+fi
