@@ -1,0 +1,6 @@
+foreground = #eeeeee
+background = #000000
+foreground_selected = #000000
+background_selected = #eeeeee
+font = Unifont-18
+#font-size = 18
